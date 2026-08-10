@@ -117,7 +117,8 @@ if (viewer) {
   updateProgress();
 
   const animate = () => {
-    updateProgress();
+    const progress = updateProgress();
+    rig.position.y = -progress * 1.5;
     rig.rotation.y = baseRotation + userRotation;
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
