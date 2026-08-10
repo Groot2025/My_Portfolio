@@ -63,7 +63,8 @@ if (viewer) {
       model.position.sub(center);
       wrapper.add(model);
       wrapper.scale.setScalar(scale);
-      wrapper.rotation.x = Math.PI / 2;
+      wrapper.rotation.x = -0.22;
+      wrapper.rotation.z = 0.08;
       rig.add(wrapper);
       viewer.classList.add("is-loaded");
     },
