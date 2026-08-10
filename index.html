@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Engineering Portfolio</title>
+    <meta name="description" content="A five-year engineering portfolio covering robotics, wireless systems, simulation, and edge software.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Portfolio home">
+        <span class="brand-mark">P</span>
+        <span>Portfolio</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Robotics · Wireless Systems · Edge AI</p>
+          <h1>Five years of building hardware-aware software.</h1>
+          <p class="lead">
+            I work across autonomous systems, radio links, simulation, signal processing,
+            and practical developer tools. This portfolio collects the projects, experiments,
+            and engineering decisions behind that work.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Portfolio visual summary">
+          <div class="signal-map">
+            <span class="node node-a"></span>
+            <span class="node node-b"></span>
+            <span class="node node-c"></span>
+            <span class="node node-d"></span>
+            <span class="path path-one"></span>
+            <span class="path path-two"></span>
+            <span class="path path-three"></span>
+            <div class="mission-panel">
+              <span>RTK</span>
+              <strong>Simulation linked to field systems</strong>
+            </div>
+            <div class="data-panel">
+              <span>CSI</span>
+              <strong>Wireless sensing and telemetry</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="Portfolio highlights">
+        <div>
+          <strong>5+</strong>
+          <span>Years of project work</span>
+        </div>
+        <div>
+          <strong>6</strong>
+          <span>Featured systems</span>
+        </div>
+        <div>
+          <strong>4</strong>
+          <span>Core domains</span>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-art art-ruview"></div>
+            <div class="project-content">
+              <p class="project-kicker">Wireless sensing · Edge systems</p>
+              <h3>RuView</h3>
+              <p>
+                WiFi CSI sensing platform exploring camera-free presence, pose, vital signs,
+                and edge processing with ESP32-class hardware and local-first software.
+              </p>
+              <ul class="tags">
+                <li>Rust</li>
+                <li>ESP32</li>
+                <li>Signal Processing</li>
+                <li>Edge AI</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art art-hc12"></div>
+            <div class="project-content">
+              <p class="project-kicker">RTCM3 · Serial tools</p>
+              <h3>HC-12 RTCM Tester</h3>
+              <p>
+                Desktop utility for transmitting, receiving, validating, and logging RTCM3
+                and UBX frames over HC-12 radio links for RTK correction workflows.
+              </p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>Tkinter</li>
+                <li>RTK</li>
+                <li>Serial</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art art-ardupilot"></div>
+            <div class="project-content">
+              <p class="project-kicker">Autonomy · Simulation</p>
+              <h3>ArduPilot Gazebo Work</h3>
+              <p>
+                Work around ArduPilot SITL and Gazebo simulation, including models, plugin
+                integration, sensor support, and repeatable simulation environments.
+              </p>
+              <ul class="tags">
+                <li>C++</li>
+                <li>Gazebo</li>
+                <li>SITL</li>
+                <li>Robotics</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art art-crazyflie"></div>
+            <div class="project-content">
+              <p class="project-kicker">Drones · Tooling</p>
+              <h3>Crazyflie Client Experiments</h3>
+              <p>
+                Python-based work with the Crazyflie client ecosystem, flight tooling,
+                logging, configuration, and developer workflows for small aerial robots.
+              </p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>UAV</li>
+                <li>Telemetry</li>
+                <li>Tooling</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art art-logs"></div>
+            <div class="project-content">
+              <p class="project-kicker">GNSS · Field data</p>
+              <h3>RTK and RTCM Field Logs</h3>
+              <p>
+                Collection and analysis of RTCM receive logs, MAVLink telemetry, and
+                correction-stream behavior while testing navigation and radio reliability.
+              </p>
+              <ul class="tags">
+                <li>GNSS</li>
+                <li>MAVLink</li>
+                <li>CSV Analysis</li>
+                <li>Debugging</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="timeline" class="section timeline-section">
+        <div class="section-heading">
+          <p class="eyebrow">Progression</p>
+          <h2>Five-Year Timeline</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>2022</span>
+            <h3>Foundations</h3>
+            <p>Built core programming, electronics, Linux, and hardware debugging habits.</p>
+          </article>
+          <article>
+            <span>2023</span>
+            <h3>Robotics Systems</h3>
+            <p>Moved into simulation, vehicle tooling, telemetry, and autonomous system workflows.</p>
+          </article>
+          <article>
+            <span>2024</span>
+            <h3>Flight and Simulation</h3>
+            <p>Worked with ArduPilot, Gazebo, Crazyflie tooling, and repeatable test environments.</p>
+          </article>
+          <article>
+            <span>2025</span>
+            <h3>Wireless and GNSS</h3>
+            <p>Focused on HC-12 radio links, RTCM3, UBX parsing, RTK correction streams, and field logs.</p>
+          </article>
+          <article>
+            <span>2026</span>
+            <h3>Edge Sensing</h3>
+            <p>Expanded into WiFi CSI, ESP32 sensing, edge signal processing, and privacy-aware systems.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <div class="section-heading">
+          <p class="eyebrow">Technical Range</p>
+          <h2>Skills</h2>
+        </div>
+        <div class="skill-groups">
+          <article>
+            <h3>Software</h3>
+            <p>Python, Rust, C++, JavaScript, shell scripting, desktop tools, testable utilities.</p>
+          </article>
+          <article>
+            <h3>Robotics</h3>
+            <p>ArduPilot, Gazebo, SITL, MAVLink, telemetry, flight logs, simulation workflows.</p>
+          </article>
+          <article>
+            <h3>Wireless</h3>
+            <p>RTCM3, UBX, HC-12 links, GNSS correction streams, WiFi CSI, serial debugging.</p>
+          </article>
+          <article>
+            <h3>Systems</h3>
+            <p>Linux, embedded workflows, data logging, edge processing, practical diagnostics.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s connect the work to the next problem.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:christinthomas025@gmail.com">Email</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
