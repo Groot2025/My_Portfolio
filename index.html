@@ -6,6 +6,14 @@
     <title>Christin K Thomas | Engineering Portfolio</title>
     <meta name="description" content="Portfolio of Christin K Thomas covering drones, swarm systems, embedded avionics, RTK, simulation, and defense-grade payload work.">
     <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three/three.module.js"
+        }
+      }
+    </script>
+    <script type="module" src="main.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -80,22 +88,62 @@
         </div>
 
         <div class="project-grid">
-          <article class="project-card featured">
-            <div class="project-art art-ruview"></div>
-            <div class="project-content">
-              <p class="project-kicker">Drone swarms · Operations</p>
-              <h3>Drone Show Ecosystem</h3>
-              <p>
-                Architected and deployed a drone show ecosystem based on open-source
-                Skybrush, including swarm operations, common networking, telemetry,
-                and operational readiness for multi-drone shows.
-              </p>
-              <ul class="tags">
-                <li>Skybrush</li>
-                <li>ArduPilot</li>
-                <li>Swarm Drones</li>
-                <li>Operations</li>
-              </ul>
+          <article class="project-card showcase">
+            <div class="showcase-viewer drone-viewer" data-model="assets/models/final-drone-v3.glb">
+              <canvas aria-label="Rotating 3D model of the final drone v3 design"></canvas>
+              <div class="viewer-fallback">
+                <span>3D Drone</span>
+              </div>
+              <div class="viewer-hint">Scroll to explore · Drag to rotate</div>
+            </div>
+            <div class="showcase-body">
+              <div class="showcase-intro">
+                <p class="project-kicker">Drone swarms · Operations</p>
+                <h3>Drone Show Ecosystem</h3>
+                <p>
+                  Architected and deployed a drone show ecosystem based on open-source
+                  Skybrush, including swarm operations, common networking, telemetry,
+                  and operational readiness for multi-drone shows.
+                </p>
+                <ul class="tags">
+                  <li>Skybrush</li>
+                  <li>ArduPilot</li>
+                  <li>Swarm Drones</li>
+                  <li>Operations</li>
+                </ul>
+              </div>
+              <ol class="feature-list" aria-label="Drone design features">
+                <li class="feature">
+                  <span class="feature-index">01</span>
+                  <h4>Airframe and Weight</h4>
+                  <p>3&quot; propeller frame at ~300 g all-up weight, built for dense show formations.</p>
+                </li>
+                <li class="feature">
+                  <span class="feature-index">02</span>
+                  <h4>Show Endurance</h4>
+                  <p>15 min endurance per show flight, with over 1000 units produced in the production run.</p>
+                </li>
+                <li class="feature">
+                  <span class="feature-index">03</span>
+                  <h4>Dual Telemetry</h4>
+                  <p>Redundant dual telemetry links keep every drone in contact across the show field.</p>
+                </li>
+                <li class="feature">
+                  <span class="feature-index">04</span>
+                  <h4>Flight Stack</h4>
+                  <p>Skybrush orchestration on ArduPilot for reliable, repeatable multi-drone choreography.</p>
+                </li>
+                <li class="feature">
+                  <span class="feature-index">05</span>
+                  <h4>RTK Precision</h4>
+                  <p>Centimeter-level positioning using a custom RTK module for tight formation accuracy.</p>
+                </li>
+                <li class="feature">
+                  <span class="feature-index">06</span>
+                  <h4>Safety Layers</h4>
+                  <p>Geofence and telemetry safety features keep operations fail-safe and compliant.</p>
+                </li>
+              </ol>
             </div>
           </article>
 

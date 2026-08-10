@@ -111,6 +111,7 @@ a {
 h1,
 h2,
 h3,
+h4,
 p {
   margin-top: 0;
 }
@@ -333,9 +334,138 @@ h3 {
   grid-column: span 2;
 }
 
+.project-card.showcase {
+  display: grid;
+  gap: 0;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+}
+
+.showcase-viewer {
+  align-self: start;
+  height: calc(100vh - 150px);
+  min-height: 420px;
+  position: sticky;
+  top: 88px;
+}
+
+.showcase-body {
+  display: flex;
+  flex-direction: column;
+  padding: 56px 52px 56px 0;
+}
+
+.showcase-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 44vh;
+  padding-bottom: 10vh;
+}
+
+.showcase-intro .tags {
+  margin-top: 26px;
+}
+
+.feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feature {
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+  opacity: 0.32;
+  padding: 30px 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature.is-active {
+  opacity: 1;
+}
+
+.feature-index {
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.feature h4 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 10px 0 8px;
+}
+
+.feature p {
+  color: var(--muted);
+  margin-bottom: 0;
+  max-width: 46ch;
+}
+
+.viewer-hint {
+  background: rgba(10, 18, 15, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  bottom: 18px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.76rem;
+  font-weight: 700;
+  left: 50%;
+  padding: 7px 14px;
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 3;
+}
+
 .project-art {
   aspect-ratio: 16 / 9;
   min-height: 180px;
+}
+
+.drone-viewer {
+  background:
+    radial-gradient(circle at 50% 44%, rgba(255, 255, 255, 0.55), transparent 24%),
+    linear-gradient(135deg, #10272e, #176b87 48%, #e8a93c);
+  overflow: hidden;
+  position: relative;
+}
+
+.drone-viewer canvas {
+  display: block;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.viewer-fallback {
+  align-items: center;
+  color: rgba(255, 255, 255, 0.88);
+  display: flex;
+  font-weight: 800;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.drone-viewer.is-loaded .viewer-fallback {
+  display: none;
+}
+
+.project-proof {
+  border-left: 3px solid var(--sun);
+  color: var(--ink) !important;
+  font-weight: 780;
+  margin: 18px 0 0;
+  padding-left: 12px;
 }
 
 .art-ruview {
@@ -525,6 +655,30 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .project-card.showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-viewer {
+    height: min(62vh, 540px);
+    min-height: 360px;
+    top: 78px;
+  }
+
+  .showcase-body {
+    padding: 40px 24px 8px;
+  }
+
+  .showcase-intro {
+    min-height: auto;
+    padding-bottom: 5vh;
+  }
+
+  .feature {
+    min-height: auto;
+    padding: 26px 0;
+  }
+
   .timeline {
     grid-template-columns: 1fr;
   }
@@ -585,6 +739,14 @@ h3 {
 
   .project-card.featured {
     grid-column: span 1;
+  }
+
+  .showcase-viewer {
+    top: 10px;
+  }
+
+  .viewer-hint {
+    bottom: 12px;
   }
 
   .mission-panel,
