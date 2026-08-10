@@ -3,20 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Engineering Portfolio</title>
-    <meta name="description" content="A five-year engineering portfolio covering Drones, swarm wireless systems, simulation, and Mil Grade Defence products.">
+    <title>Christin K Thomas | Engineering Portfolio</title>
+    <meta name="description" content="Portfolio of Christin K Thomas covering drones, swarm systems, embedded avionics, RTK, simulation, and defense-grade payload work.">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Portfolio home">
         <span class="brand-mark">P</span>
-        <span>Portfolio</span>
+        <span>Christin K Thomas</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#projects">Projects</a>
         <a href="#timeline">Timeline</a>
         <a href="#skills">Skills</a>
+        <a href="#credentials">Credentials</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -24,16 +25,16 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Robotics · Wireless Systems · Edge AI</p>
-          <h1>Five years of building hardware-aware software.</h1>
+          <p class="eyebrow">Systems Engineer · Drones · Embedded Avionics</p>
+          <h1>Building drone, avionics, and embedded systems from hardware to operations.</h1>
           <p class="lead">
-            I work across autonomous systems, radio links, simulation, signal processing,
-            and practical developer tools. This portfolio collects the projects, experiments,
-            and engineering decisions behind that work.
+            I work across drone swarms, telemetry redundancy, RTK precision,
+            avionics payloads, embedded hardware, firmware, robotics, and field-ready
+            systems for real operational environments.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button secondary" href="#contact">Contact</a>
           </div>
         </div>
         <div class="hero-visual" aria-label="Portfolio visual summary">
@@ -47,11 +48,11 @@
             <span class="path path-three"></span>
             <div class="mission-panel">
               <span>RTK</span>
-              <strong>Simulation linked to field systems</strong>
+              <strong>Centimeter-level positioning for drone operations</strong>
             </div>
             <div class="data-panel">
-              <span>CSI</span>
-              <strong>Wireless sensing and telemetry</strong>
+              <span>SWARM</span>
+              <strong>Open-source drone show ecosystem deployment</strong>
             </div>
           </div>
         </div>
@@ -60,39 +61,40 @@
       <section class="stats" aria-label="Portfolio highlights">
         <div>
           <strong>5+</strong>
-          <span>Years of project work</span>
-        </div>
-        <div>
-          <strong>6</strong>
-          <span>Featured systems</span>
+          <span>Years in robotics and embedded systems</span>
         </div>
         <div>
           <strong>4</strong>
-          <span>Core domains</span>
+          <span>Professional roles</span>
+        </div>
+        <div>
+          <strong>10+</strong>
+          <span>Hardware and software systems</span>
         </div>
       </section>
 
       <section id="projects" class="section">
         <div class="section-heading">
           <p class="eyebrow">Selected Work</p>
-          <h2>Projects</h2>
+          <h2>Projects and Systems</h2>
         </div>
 
         <div class="project-grid">
           <article class="project-card featured">
             <div class="project-art art-ruview"></div>
             <div class="project-content">
-              <p class="project-kicker">Wireless sensing · Edge systems</p>
-              <h3>RuView</h3>
+              <p class="project-kicker">Drone swarms · Operations</p>
+              <h3>Drone Show Ecosystem</h3>
               <p>
-                WiFi CSI sensing platform exploring camera-free presence, pose, vital signs,
-                and edge processing with ESP32-class hardware and local-first software.
+                Architected and deployed a drone show ecosystem based on open-source
+                Skybrush, including swarm operations, common networking, telemetry,
+                and operational readiness for multi-drone shows.
               </p>
               <ul class="tags">
-                <li>Rust</li>
-                <li>ESP32</li>
-                <li>Signal Processing</li>
-                <li>Edge AI</li>
+                <li>Skybrush</li>
+                <li>ArduPilot</li>
+                <li>Swarm Drones</li>
+                <li>Operations</li>
               </ul>
             </div>
           </article>
@@ -100,16 +102,17 @@
           <article class="project-card">
             <div class="project-art art-hc12"></div>
             <div class="project-content">
-              <p class="project-kicker">RTCM3 · Serial tools</p>
-              <h3>HC-12 RTCM Tester</h3>
+              <p class="project-kicker">Telemetry · Redundancy</p>
+              <h3>HC-12 Secondary Telemetry System</h3>
               <p>
-                Desktop utility for transmitting, receiving, validating, and logging RTCM3
-                and UBX frames over HC-12 radio links for RTK correction workflows.
+                Developed a cost-effective HC-12 based secondary telemetry path to add
+                redundancy during drone show operations, with RTCM3 and UBX frame
+                handling tools for correction-stream testing.
               </p>
               <ul class="tags">
                 <li>Python</li>
-                <li>Tkinter</li>
-                <li>RTK</li>
+                <li>HC-12</li>
+                <li>RTCM3</li>
                 <li>Serial</li>
               </ul>
             </div>
@@ -118,17 +121,17 @@
           <article class="project-card">
             <div class="project-art art-ardupilot"></div>
             <div class="project-content">
-              <p class="project-kicker">Autonomy · Simulation</p>
-              <h3>ArduPilot Gazebo Work</h3>
+              <p class="project-kicker">GNSS · Precision</p>
+              <h3>ZED-F9P RTK Module PCBA</h3>
               <p>
-                Work around ArduPilot SITL and Gazebo simulation, including models, plugin
-                integration, sensor support, and repeatable simulation environments.
+                Designed a ZED-F9P based RTK module PCBA for centimeter-level precision
+                positioning in drone show drones and field navigation workflows.
               </p>
               <ul class="tags">
-                <li>C++</li>
-                <li>Gazebo</li>
-                <li>SITL</li>
-                <li>Robotics</li>
+                <li>ZED-F9P</li>
+                <li>RTK</li>
+                <li>PCBA</li>
+                <li>GNSS</li>
               </ul>
             </div>
           </article>
@@ -136,17 +139,17 @@
           <article class="project-card">
             <div class="project-art art-crazyflie"></div>
             <div class="project-content">
-              <p class="project-kicker">Drones · Tooling</p>
-              <h3>Crazyflie Client Experiments</h3>
+              <p class="project-kicker">Avionics · Payload</p>
+              <h3>Surveillance Aerostat Payload Box</h3>
               <p>
-                Python-based work with the Crazyflie client ecosystem, flight tooling,
-                logging, configuration, and developer workflows for small aerial robots.
+                Developed a MIL-STD-461E avionics payload box for a surveillance aerostat
+                and worked on made-in-India military-grade EO/IR camera systems.
               </p>
               <ul class="tags">
-                <li>Python</li>
-                <li>UAV</li>
-                <li>Telemetry</li>
-                <li>Tooling</li>
+                <li>Avionics</li>
+                <li>EO/IR</li>
+                <li>MIL-STD-461E</li>
+                <li>Payload</li>
               </ul>
             </div>
           </article>
@@ -154,17 +157,35 @@
           <article class="project-card">
             <div class="project-art art-logs"></div>
             <div class="project-content">
-              <p class="project-kicker">GNSS · Field data</p>
-              <h3>RTK and RTCM Field Logs</h3>
+              <p class="project-kicker">Computer vision · SDK</p>
+              <h3>EO/IR Tracking SDK</h3>
               <p>
-                Collection and analysis of RTCM receive logs, MAVLink telemetry, and
-                correction-stream behavior while testing navigation and radio reliability.
+                Built a CSRT-based tracking SDK for EO/IR camera workflows, connecting
+                computer vision experiments to defense-grade imaging use cases.
               </p>
               <ul class="tags">
-                <li>GNSS</li>
-                <li>MAVLink</li>
-                <li>CSV Analysis</li>
-                <li>Debugging</li>
+                <li>Python</li>
+                <li>OpenCV</li>
+                <li>CSRT</li>
+                <li>Tracking</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art art-crazyflie"></div>
+            <div class="project-content">
+              <p class="project-kicker">Personal project · UAV</p>
+              <h3>GNSS-Denied Drone</h3>
+              <p>
+                Ongoing personal project exploring GNSS-denied drone navigation using
+                visual navigation and sensor fusion for positioning without GPS.
+              </p>
+              <ul class="tags">
+                <li>Visual Nav</li>
+                <li>Sensor Fusion</li>
+                <li>UAV</li>
+                <li>ArduPilot</li>
               </ul>
             </div>
           </article>
@@ -174,33 +195,33 @@
       <section id="timeline" class="section timeline-section">
         <div class="section-heading">
           <p class="eyebrow">Progression</p>
-          <h2>Five-Year Timeline</h2>
+          <h2>Experience Timeline</h2>
         </div>
         <div class="timeline">
           <article>
-            <span>2022</span>
-            <h3>Foundations</h3>
-            <p>Built core programming, electronics, Linux, and hardware debugging habits.</p>
+            <span>Mar 2022 - Sep 2022</span>
+            <h3>Embedded Systems Intern</h3>
+            <p>Designed ATmega328P and ATmega2560 quadrotors, prototyped an STM32 flight controller, and taught robotics at ATL labs.</p>
           </article>
           <article>
-            <span>2023</span>
-            <h3>Robotics Systems</h3>
-            <p>Moved into simulation, vehicle tooling, telemetry, and autonomous system workflows.</p>
+            <span>Jan 2023 - Jun 2023</span>
+            <h3>Research Intern</h3>
+            <p>Developed YOLOv8 object and person detection, TinyML smell detection, helium quench detection, and liquid nitrogen leak detection.</p>
           </article>
           <article>
-            <span>2024</span>
-            <h3>Flight and Simulation</h3>
-            <p>Worked with ArduPilot, Gazebo, Crazyflie tooling, and repeatable test environments.</p>
+            <span>Jul 2023 - Jan 2024</span>
+            <h3>Hardware and Firmware Intern</h3>
+            <p>Implemented LiDAR-based obstacle avoidance and designed charging station, strobe light, and position light PCBAs for drones.</p>
           </article>
           <article>
-            <span>2025</span>
-            <h3>Wireless and GNSS</h3>
-            <p>Focused on HC-12 radio links, RTCM3, UBX parsing, RTK correction streams, and field logs.</p>
+            <span>Feb 2024 - Present</span>
+            <h3>Systems Engineer</h3>
+            <p>Built drone show systems, HC-12 telemetry redundancy, RTK hardware, avionics payloads, EO/IR tracking, and mesh radio workflows.</p>
           </article>
           <article>
-            <span>2026</span>
-            <h3>Edge Sensing</h3>
-            <p>Expanded into WiFi CSI, ESP32 sensing, edge signal processing, and privacy-aware systems.</p>
+            <span>Personal Work</span>
+            <h3>Robotics Projects</h3>
+            <p>Built a wireless robotic arm, integrated an ArduPilot FPV drone, simulated ROS object detection, and continued GNSS-denied drone work.</p>
           </article>
         </div>
       </section>
@@ -212,20 +233,45 @@
         </div>
         <div class="skill-groups">
           <article>
-            <h3>Software</h3>
-            <p>Python, Rust, C++, JavaScript, shell scripting, desktop tools, testable utilities.</p>
+            <h3>Embedded and Firmware</h3>
+            <p>C, C++, Python, embedded system design, PCBA bring-up, Arduino, STM32, and ATmega platforms.</p>
           </article>
           <article>
-            <h3>Robotics</h3>
-            <p>ArduPilot, Gazebo, SITL, MAVLink, telemetry, flight logs, simulation workflows.</p>
+            <h3>Drones and Avionics</h3>
+            <p>ArduPilot, drone show operations, avionics payloads, mesh radios, EO/IR camera workflows.</p>
           </article>
           <article>
-            <h3>Wireless</h3>
-            <p>RTCM3, UBX, HC-12 links, GNSS correction streams, WiFi CSI, serial debugging.</p>
+            <h3>Wireless and GNSS</h3>
+            <p>HC-12 telemetry, RTK, ZED-F9P, RTCM3, UBX, GNSS correction streams, and serial debugging.</p>
           </article>
           <article>
-            <h3>Systems</h3>
-            <p>Linux, embedded workflows, data logging, edge processing, practical diagnostics.</p>
+            <h3>AI and Tools</h3>
+            <p>YOLOv8, TinyML, RNNs, OpenCV CSRT tracking, ROS simulation, Linux, 3D modelling, and 3D printing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="credentials" class="section credentials-section">
+        <div class="section-heading">
+          <p class="eyebrow">Education and Recognition</p>
+          <h2>Credentials</h2>
+        </div>
+        <div class="credential-grid">
+          <article>
+            <h3>B.Tech in Electronics and Communication Engineering</h3>
+            <p>IIMT College of Engineering, Greater Noida · 2023</p>
+          </article>
+          <article>
+            <h3>Cisco CCNA</h3>
+            <p>Routing and switching certification with networking fundamentals relevant to telemetry and mesh systems.</p>
+          </article>
+          <article>
+            <h3>Innovation Award</h3>
+            <p>Won 3rd prize at Pratibha Innovation Challenge organized by IIMT College of Engineering.</p>
+          </article>
+          <article>
+            <h3>Community and Teaching</h3>
+            <p>Former founding member of Youth Against Cybercrime and organized UAV learning sessions for engineering students.</p>
           </article>
         </div>
       </section>
@@ -233,7 +279,7 @@
       <section id="contact" class="contact">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Let’s connect the work to the next problem.</h2>
+          <h2>Open to systems, embedded, avionics, and robotics engineering work.</h2>
         </div>
         <div class="contact-links">
           <a href="mailto:christinthomas025@gmail.com">Email</a>

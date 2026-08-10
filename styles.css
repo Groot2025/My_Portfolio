@@ -450,11 +450,26 @@ h3 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.skill-groups article {
+.skill-groups article,
+.credential-grid article {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 24px;
+}
+
+.credentials-section {
+  border-top: 1px solid var(--line);
+}
+
+.credential-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.credential-grid p {
+  color: var(--muted);
 }
 
 .contact {
@@ -505,7 +520,8 @@ h3 {
   }
 
   .project-grid,
-  .skill-groups {
+  .skill-groups,
+  .credential-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -557,7 +573,8 @@ h3 {
 
   .stats,
   .project-grid,
-  .skill-groups {
+  .skill-groups,
+  .credential-grid {
     grid-template-columns: 1fr;
   }
 
