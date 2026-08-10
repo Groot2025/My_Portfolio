@@ -34,6 +34,7 @@ if (viewer) {
   const ROTATION_RANGE = Math.PI * 2 * 2.5;
 
   let baseRotation = 0;
+  let droneSink = 0;
   let userRotation = 0;
   let isDragging = false;
   let lastX = 0;
@@ -110,6 +111,17 @@ if (viewer) {
       });
     }
 
+    if (features.length > 1) {
+      const vh = window.innerHeight;
+      const firstTop = features[0].getBoundingClientRect().top;
+      const lastTop = features[features.length - 1].getBoundingClientRect().top;
+      const span = lastTop - firstTop;
+      droneSink =
+        span > 0
+          ? THREE.MathUtils.clamp((vh - firstTop) / (span + vh * 0.5), 0, 1)
+          : 0;
+    }
+
     return progress;
   };
 
@@ -117,8 +129,8 @@ if (viewer) {
   updateProgress();
 
   const animate = () => {
-    const progress = updateProgress();
-    rig.position.y = -progress * 1.5;
+    updateProgress();
+    rig.position.y = -droneSink * 1.5;
     rig.rotation.y = baseRotation + userRotation;
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
