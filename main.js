@@ -25,6 +25,7 @@ if (viewer) {
   scene.add(new THREE.HemisphereLight(0xdff6ff, 0x2c2015, 1.7));
 
   camera.position.set(0, 1.1, 5.8);
+  camera.lookAt(0, 0, 0);
 
   const rig = new THREE.Group();
   scene.add(rig);
@@ -56,13 +57,15 @@ if (viewer) {
       const size = box.getSize(new THREE.Vector3());
       const center = box.getCenter(new THREE.Vector3());
       const maxAxis = Math.max(size.x, size.y, size.z);
-      const scale = 3 / maxAxis;
+      const scale = 2.2 / maxAxis;
 
+      const wrapper = new THREE.Group();
       model.position.sub(center);
-      model.scale.setScalar(scale);
-      model.rotation.x = -0.22;
-      model.rotation.z = 0.08;
-      rig.add(model);
+      wrapper.add(model);
+      wrapper.scale.setScalar(scale);
+      wrapper.rotation.x = -0.22;
+      wrapper.rotation.z = 0.08;
+      rig.add(wrapper);
       viewer.classList.add("is-loaded");
     },
     undefined,
